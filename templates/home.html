@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="{{ url_for('static',    filename='css/template.css') }}">
+</head>
+
+<body>
+  <h1><center>Assist</center></h1>
+  <div class="navbar">
+  <ul>
+  <li><a class="active" href="{{ url_for('home') }}">Home</a></li>
+  <li><a href="{{ url_for('about') }}">About</a></li>
+
+</ul>
+</div>
+<h2>Click a learning style to learn more</h2>
+<div class="container">
+  <a href="{{ url_for('kinesthetic') }}">
+    <img src="../static/images/kinesthetic.jpeg" style="width:100%">
+  </a>
+  <a href="{{ url_for('auditory') }}">
+    <img src="../static/images/auditory.jpeg" style="width:100%">
+  </a>
+<a href="{{ url_for('visual') }}">
+  <img src="../static/images/visual.jpeg" style="width:100%">
+</a>
+</div>
+</body>
+</html>
